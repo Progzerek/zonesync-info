@@ -2,8 +2,7 @@
 
 **A dynamic music volume controller for Valorant.**
 
-![ZoneSync App Interface](image.png)  
-*(Replace this text with the path to your main screenshot file, e.g., `image.jpg`)*
+![ZoneSync App Interface](image.png)
 
 ## Overview
 I built **ZoneSync** because I love listening to music while playing Valorant, but I constantly missed critical audio cues like enemy footsteps. Alt-tabbing to lower the volume or manually pausing tracks was distracting and often got me killed.
