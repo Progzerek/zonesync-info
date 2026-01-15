@@ -2,7 +2,7 @@
 
 **A dynamic music volume controller for Valorant.**
 
-![ZoneSync App Interface](image_interface.jpg)  
+![ZoneSync App Interface](image.jpg)  
 *(Replace this text with the path to your main screenshot file, e.g., `image.jpg`)*
 
 ## Overview
