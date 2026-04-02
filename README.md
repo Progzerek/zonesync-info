@@ -14,11 +14,11 @@ I built **ZoneSync** because I love listening to music while playing Valorant, b
 - **Context-Aware:**
   - **Walking:** Lowers volume when you hold your Walk key (e.g., Shift).
   - **Clutch Mode:** Automatically lowers volume when you are the **last player alive** (1vX situations).
-  - **Death Mode:** Restores or boosts volume when you die.
+  - **Death Mode:** Restores volume when you die.
   - **Round & Buy Phase:** Custom volume levels for active combat vs. shopping time.
 - **App Mixer:** choose exactly which apps you want to control (e.g., mute Spotify but keep Discord normal).
 
-## How It Works
+## How to use
 ZoneSync uses the **Overwolf Game Events Provider (GEP)** to detect game states locally on your machine.
 
 1. **Install** the app via the Overwolf Store.
