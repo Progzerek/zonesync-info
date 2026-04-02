@@ -12,12 +12,12 @@ I built **ZoneSync** because I love listening to music while playing Valorant, b
 ## Features
 - **Dynamic Volume Control:** Automatically ducks volume during important gameplay moments.
 - **Context-Aware:**
-  - **Walking:** Lowers volume when you hold your Walk key (e.g., Shift).
+  - **Walking:** Lowers volume when you hold your Walk key (e.g., Shift).![walking video](VALORANT_2026.04.02-21.51.mp4)
   - **Clutch Mode:** Automatically lowers volume when you are the **last player alive** (1vX situations).
   - **Death Mode:** Restores volume when you die.
-  - **Round & Buy Phase:** Custom volume levels for active combat vs. shopping time.
+  - **Round & Buy Phase:** Custom volume levels for active combat vs. shopping time.![buy and round video](VALORANT_2026.04.02-21.56.mp4)
 - **Testing:** test the volume of each situation to fine tune before a match.
-- **App Mixer:** choose exactly which apps you want to control (e.g., mute Spotify but keep Discord normal).
+- **App Mixer:** choose exactly which apps you want to control (e.g., mute Spotify but keep Discord normal).![app mixer video](VALORANT_2026.04.02-21.56.mp4)
 
 ## How to use
 ZoneSync uses the **Overwolf Game Events Provider (GEP)** to detect game states locally on your machine.
