@@ -9,7 +9,7 @@ I built **ZoneSync** because I love listening to music while playing Valorant, b
 
 **ZoneSync** solves this by automatically adjusting the volume of your background apps (Spotify, Discord, Opera, etc.) based on real-time game events.
 
-## Features
+## Features (with clickable videos)
 - **Dynamic Volume Control:** Automatically ducks volume during important gameplay moments.
 - **Context-Aware:**
   - **Walking:** Lowers volume when you hold your Walk key (e.g., Shift).
