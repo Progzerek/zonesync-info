@@ -13,7 +13,7 @@ I built **ZoneSync** because I love listening to music while playing Valorant, b
 - **Dynamic Volume Control:** Automatically ducks volume during important gameplay moments.
 - **Context-Aware:**
   - **Walking:** Lowers volume when you hold your Walk key (e.g., Shift).
-    [![Video Title](https://img.youtube.com/vi/SkDnakiuidk/0.jpg)](https://www.youtube.com/watch?v=SkDnakiuidk)
+    [![Video Title](https://img.youtube.com/vi/nGo2iRFJits/0.jpg)](https://www.youtube.com/watch?v=nGo2iRFJits)
   - **Clutch Mode:** Automatically lowers volume when you are the **last player alive** (1vX situations).
   - **Death Mode:** Restores volume when you die.
   - **Round & Buy Phase:** Custom volume levels for active combat vs. shopping time.
