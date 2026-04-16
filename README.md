@@ -17,7 +17,7 @@ I built **ZoneSync** because I love listening to music while playing Valorant, b
   - **Clutch Mode:** Automatically lowers volume when you are the **last player alive** (1vX situations).
   - **Death Mode:** Restores volume when you die.
   - **Round & Buy Phase:** Custom volume levels for active combat vs. shopping time.
-    [![Video Title](https://img.youtube.com/vi/eYfY7psB-9g/0.jpg)](https://www.youtube.com/watch?v=-3-QPP0-mTc)
+    [![Video Title](https://img.youtube.com/vi/rhAbj9WUvik/0.jpg)](https://www.youtube.com/watch?v=rhAbj9WUvik)
 - **Testing:** test the volume of each situation to fine tune before a match.
 - **App Mixer:** choose exactly which apps you want to control (e.g., mute Spotify but keep Discord normal).
   [![Video Title](https://img.youtube.com/vi/eYfY7psB-9g/0.jpg)](https://www.youtube.com/watch?v=eYfY7psB-9g)
