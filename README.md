@@ -21,7 +21,8 @@ I built **ZoneSync** because I love listening to music while playing Valorant, b
 - **Testing:** test the volume of each situation to fine tune before a match.
 - **App Mixer:** choose exactly which apps you want to control (e.g., mute Spotify but keep Discord normal).
   [![Video Title](https://img.youtube.com/vi/eYfY7psB-9g/0.jpg)](https://www.youtube.com/watch?v=eYfY7psB-9g)
-  Note: all funcions use the same logic, just for differenmt events
+  
+  Note: all funcions use the same logic, just for different events
 
 ## How to use
 ZoneSync uses the **Overwolf Game Events Provider (GEP)** to detect game states locally on your machine.
