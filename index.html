@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZoneSync — Dynamic music volume control for Valorant</title>
+  <meta name="description" content="ZoneSync automatically adjusts your music and app volume during Valorant gameplay so you never miss footsteps, clutches or callouts.">
+  <meta property="og:title" content="ZoneSync — Dynamic music volume control for Valorant">
+  <meta property="og:description" content="Automatically ducks Spotify, Discord and other apps during crucial Valorant moments — and restores them right after.">
+  <meta property="og:url" content="https://progzerek.github.io/zonesync-info/">
+  <meta property="og:image" content="https://progzerek.github.io/zonesync-info/image.png">
+  <link rel="icon" type="image/png" href="assets/zonesync_icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top">
+        <img src="assets/zonesync_icon.png" alt="ZoneSync logo">
+        <span>ZoneSync</span>
+      </a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#videos">Videos</a>
+        <a href="#how-to-use">How to use</a>
+        <a href="#download">Download</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero container" id="top">
+    <span class="badge"><span class="badge-dot"></span>Coming soon to the Overwolf Store</span>
+    <h1>Never miss a footstep<br>because of your music.</h1>
+    <p class="sub">
+      ZoneSync automatically ducks Spotify, Discord and other apps during crucial
+      Valorant moments — walks, clutches, rounds — and restores them right after.
+    </p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#download">Coming soon on Overwolf</a>
+      <a class="btn btn-ghost" href="#videos">See it in action</a>
+    </div>
+    <div class="hero-shot">
+      <img src="image.png" alt="ZoneSync app interface" width="1232" height="794">
+    </div>
+  </header>
+
+  <section class="section container" id="features">
+    <div class="section-head">
+      <h2 class="section-title">Features</h2>
+      <p class="section-sub">Every mode uses the same core logic, tuned to a different game event.</p>
+    </div>
+    <div class="grid features-grid">
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+        </div>
+        <h3>Dynamic Volume Control</h3>
+        <p>Music automatically ducks during important gameplay moments, then smoothly returns when the danger is over.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="1"/><path d="m9 20 3-6 3 6"/><path d="m6 8 6 2 6-2"/><path d="M12 10v4"/></svg>
+        </div>
+        <h3>Walking</h3>
+        <p>Volume lowers whenever you hold your Walk key (e.g. Shift), so you can actually hear what's around you.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/></svg>
+        </div>
+        <h3>Clutch Mode</h3>
+        <p>Volume drops automatically when you're the last player alive — full focus for your 1vX situations.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="8 2 16 2 22 8 22 16 16 22 8 22 2 16 2 8"/><line x1="9" y1="9" x2="15" y2="15"/><line x1="15" y1="9" x2="9" y2="15"/></svg>
+        </div>
+        <h3>Death Mode</h3>
+        <p>Full volume comes back the moment you die. Spectate your teammates without touching the pause button.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 1"/><line x1="10" y1="2" x2="14" y2="2"/></svg>
+        </div>
+        <h3>Round &amp; Buy Phase</h3>
+        <p>Separate volume levels for active combat versus shopping time, detected automatically each round.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="21" y1="4" x2="14" y2="4"/><line x1="10" y1="4" x2="3" y2="4"/><line x1="21" y1="12" x2="12" y2="12"/><line x1="8" y1="12" x2="3" y2="12"/><line x1="21" y1="20" x2="16" y2="20"/><line x1="12" y1="20" x2="3" y2="20"/><line x1="14" y1="2" x2="14" y2="6"/><line x1="8" y1="10" x2="8" y2="14"/><line x1="16" y1="18" x2="16" y2="22"/></svg>
+        </div>
+        <h3>App Mixer</h3>
+        <p>Choose exactly which apps get controlled — mute Spotify while Discord stays at normal volume.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section section-alt" id="videos">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">See it in action</h2>
+        <p class="section-sub">Short clips of ZoneSync reacting live to real Valorant events.</p>
+      </div>
+      <div class="grid videos-grid">
+        <div class="video-item">
+          <div class="video-card" data-video="nGo2iRFJits">
+            <img src="https://img.youtube.com/vi/nGo2iRFJits/maxresdefault.jpg" alt="" loading="lazy" onerror="this.src='https://img.youtube.com/vi/nGo2iRFJits/hqdefault.jpg'">
+            <span class="play-btn"><svg viewBox="0 0 24 24"><polygon points="8 5 19 12 8 19 8 5" fill="currentColor"/></svg></span>
+          </div>
+          <p class="video-label">Walking detection</p>
+        </div>
+        <div class="video-item">
+          <div class="video-card" data-video="rhAbj9WUvik">
+            <img src="https://img.youtube.com/vi/rhAbj9WUvik/maxresdefault.jpg" alt="" loading="lazy" onerror="this.src='https://img.youtube.com/vi/rhAbj9WUvik/hqdefault.jpg'">
+            <span class="play-btn"><svg viewBox="0 0 24 24"><polygon points="8 5 19 12 8 19 8 5" fill="currentColor"/></svg></span>
+          </div>
+          <p class="video-label">Round &amp; buy phase volumes</p>
+        </div>
+        <div class="video-item">
+          <div class="video-card" data-video="eYfY7psB-9g">
+            <img src="https://img.youtube.com/vi/eYfY7psB-9g/maxresdefault.jpg" alt="" loading="lazy" onerror="this.src='https://img.youtube.com/vi/eYfY7psB-9g/hqdefault.jpg'">
+            <span class="play-btn"><svg viewBox="0 0 24 24"><polygon points="8 5 19 12 8 19 8 5" fill="currentColor"/></svg></span>
+          </div>
+          <p class="video-label">App Mixer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container" id="how-to-use">
+    <div class="section-head">
+      <h2 class="section-title">How to use</h2>
+      <p class="section-sub">ZoneSync uses the Overwolf Game Events Provider to detect game states locally on your machine.</p>
+    </div>
+    <ol class="steps">
+      <li class="step">
+        <span class="step-num">01</span>
+        <h3>Install</h3>
+        <p>Get ZoneSync from the Overwolf Store.</p>
+      </li>
+      <li class="step">
+        <span class="step-num">02</span>
+        <h3>Launch Valorant</h3>
+        <p>The app detects the game automatically.</p>
+      </li>
+      <li class="step">
+        <span class="step-num">03</span>
+        <h3>Configure</h3>
+        <p>Set your preferred volume levels for each game state.</p>
+      </li>
+      <li class="step">
+        <span class="step-num">04</span>
+        <h3>Play!</h3>
+        <p>ZoneSync runs quietly in the background.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="section container" id="download">
+    <div class="download-card">
+      <span class="badge"><span class="badge-dot"></span>In Review / Coming Soon</span>
+      <h2 class="download-title">Get ZoneSync</h2>
+      <p class="sub">
+        ZoneSync will be available for download on the Overwolf App Store.
+        Questions or feedback? We'd love to hear from you.
+      </p>
+      <a class="btn btn-primary" href="mailto:zonesync.help@gmail.com">zonesync.help@gmail.com</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="brand brand-sm">
+        <img src="assets/zonesync_icon.png" alt="">
+        <span>ZoneSync</span>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:zonesync.help@gmail.com">Contact</a>
+        <a href="https://github.com/progzerek/zonesync-info">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.video-card').forEach(function (card) {
+      card.addEventListener('click', function () {
+        if (card.dataset.loaded) return;
+        var id = card.dataset.video;
+        var iframe = document.createElement('iframe');
+        iframe.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0';
+        iframe.allow = 'autoplay; encrypted-media; picture-in-picture';
+        iframe.allowFullscreen = true;
+        iframe.title = 'ZoneSync demo video';
+        card.innerHTML = '';
+        card.appendChild(iframe);
+        card.dataset.loaded = '1';
+      });
+    });
+  </script>
+
+</body>
+</html>
