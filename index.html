@@ -114,24 +114,15 @@
       </div>
       <div class="grid videos-grid">
         <div class="video-item">
-          <div class="video-card" data-video="nGo2iRFJits">
-            <img src="https://img.youtube.com/vi/nGo2iRFJits/maxresdefault.jpg" alt="" loading="lazy" onerror="this.src='https://img.youtube.com/vi/nGo2iRFJits/hqdefault.jpg'">
-            <span class="play-btn"><svg viewBox="0 0 24 24"><polygon points="8 5 19 12 8 19 8 5" fill="currentColor"/></svg></span>
-          </div>
+          <video class="video-card" controls preload="none" poster="assets/videos/posters/walking.jpg" src="assets/videos/walking.mp4"></video>
           <p class="video-label">Walking detection</p>
         </div>
         <div class="video-item">
-          <div class="video-card" data-video="rhAbj9WUvik">
-            <img src="https://img.youtube.com/vi/rhAbj9WUvik/maxresdefault.jpg" alt="" loading="lazy" onerror="this.src='https://img.youtube.com/vi/rhAbj9WUvik/hqdefault.jpg'">
-            <span class="play-btn"><svg viewBox="0 0 24 24"><polygon points="8 5 19 12 8 19 8 5" fill="currentColor"/></svg></span>
-          </div>
+          <video class="video-card" controls preload="none" poster="assets/videos/posters/buy-phase.jpg" src="assets/videos/buy-phase.mp4"></video>
           <p class="video-label">Round &amp; buy phase volumes</p>
         </div>
         <div class="video-item">
-          <div class="video-card" data-video="eYfY7psB-9g">
-            <img src="https://img.youtube.com/vi/eYfY7psB-9g/maxresdefault.jpg" alt="" loading="lazy" onerror="this.src='https://img.youtube.com/vi/eYfY7psB-9g/hqdefault.jpg'">
-            <span class="play-btn"><svg viewBox="0 0 24 24"><polygon points="8 5 19 12 8 19 8 5" fill="currentColor"/></svg></span>
-          </div>
+          <video class="video-card" controls preload="none" poster="assets/videos/posters/app-mixer.jpg" src="assets/videos/app-mixer.mp4"></video>
           <p class="video-label">App Mixer</p>
         </div>
       </div>
@@ -191,23 +182,6 @@
       </div>
     </div>
   </footer>
-
-  <script>
-    document.querySelectorAll('.video-card').forEach(function (card) {
-      card.addEventListener('click', function () {
-        if (card.dataset.loaded) return;
-        var id = card.dataset.video;
-        var iframe = document.createElement('iframe');
-        iframe.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0';
-        iframe.allow = 'autoplay; encrypted-media; picture-in-picture';
-        iframe.allowFullscreen = true;
-        iframe.title = 'ZoneSync demo video';
-        card.innerHTML = '';
-        card.appendChild(iframe);
-        card.dataset.loaded = '1';
-      });
-    });
-  </script>
 
 </body>
 </html>
