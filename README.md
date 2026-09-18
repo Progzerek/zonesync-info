@@ -1,11 +1,11 @@
 # ZoneSync
 
-**A dynamic music volume controller for Valorant.**
+**A dynamic music volume controller for competetive 5v5 games.**
 
 ![ZoneSync App Interface](image.png)
 
 ## Overview
-I built **ZoneSync** because I love listening to music while playing Valorant, but I constantly missed critical audio cues like enemy footsteps. Alt-tabbing to lower the volume or manually pausing tracks was distracting and often got me killed.
+I built **ZoneSync** because I love listening to music while playing competetive 5v5 games, but I constantly missed critical audio cues like enemy footsteps. Alt-tabbing to lower the volume or manually pausing tracks was distracting and often got me killed.
 
 **ZoneSync** solves this by automatically adjusting the volume of your background apps (Spotify, Discord, Opera, etc.) based on real-time game events.
 
@@ -28,7 +28,7 @@ I built **ZoneSync** because I love listening to music while playing Valorant, b
 ZoneSync uses the **Overwolf Game Events Provider (GEP)** to detect game states locally on your machine.
 
 1. **Install** the app via the Overwolf Store.
-2. **Launch Valorant.**
+2. **Launch a supported game.**
 3. **Configure** your preferred volume levels for each game state.
 4. **Play!** The app runs quietly in the background.
 
