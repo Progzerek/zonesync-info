@@ -2,7 +2,7 @@
 
 **A dynamic music volume controller for competetive 5v5 games.**
 
-![ZoneSync App Interface](image.png)
+![ZoneSync App Interface](screenshot.jpg)
 
 ## Overview
 I built **ZoneSync** because I love listening to music while playing competetive 5v5 games, but I constantly missed critical audio cues like enemy footsteps. Alt-tabbing to lower the volume or manually pausing tracks was distracting and often got me killed.
