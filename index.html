@@ -1,66 +1,8 @@
-# ZoneSync
-
-**A dynamic music volume controller for competetive 5v5 games.**
-**A dynamic music volume controller for competitive 5v5 games.**
-
-![ZoneSync App Interface](image.png)
-![ZoneSync App Interface](screenshot.jpg)
-
-## Overview
-I built **ZoneSync** because I love listening to music while playing competetive 5v5 games, but I constantly missed critical audio cues like enemy footsteps. Alt-tabbing to lower the volume or manually pausing tracks was distracting and often got me killed.
-I built **ZoneSync** because I love listening to music while playing competitive 5v5 games, but I constantly missed critical audio cues like enemy footsteps. Alt-tabbing to lower the volume or manually pausing tracks was distracting and often got me killed.
-
-**ZoneSync** solves this by automatically adjusting the volume of your background apps (Spotify, Discord, Opera, etc.) based on real-time game events.
-
-## Features (with clickable videos)
-## Features
-- **Dynamic Volume Control:** Automatically ducks volume during important gameplay moments.
-- **Context-Aware:**
-  - **Walking:** Lowers volume when you hold your Walk key (e.g., Shift).
-    [![Video Title](https://img.youtube.com/vi/nGo2iRFJits/0.jpg)](https://www.youtube.com/watch?v=nGo2iRFJits)
-  - **Clutch Mode:** Automatically lowers volume when you are the **last player alive** (1vX situations).
-  - **Death Mode:** Restores volume when you die.
-  - **Round & Buy Phase:** Custom volume levels for active combat vs. shopping time.
-    [![Video Title](https://img.youtube.com/vi/rhAbj9WUvik/0.jpg)](https://www.youtube.com/watch?v=rhAbj9WUvik)
-- **Testing:** test the volume of each situation to fine tune before a match.
-- **App Mixer:** choose exactly which apps you want to control (e.g., mute Spotify but keep Discord normal).
-  [![Video Title](https://img.youtube.com/vi/eYfY7psB-9g/0.jpg)](https://www.youtube.com/watch?v=eYfY7psB-9g)
-  
-  Note: all funcions use the same logic, just for different events
-
-  Note: all functions use the same logic, just for different events
-
-## Supported games
-**Counter-Strike 2** is supported today. More titles are on the way.
-
-## How to use
-ZoneSync uses the **Overwolf Game Events Provider (GEP)** to detect game states locally on your machine.
-
-1. **Install** the app via the Overwolf Store.
-1. **Install** the app from the [Overwolf Store](https://www.overwolf.com/app/progzerek-zonesync).
-2. **Launch a supported game.**
-3. **Configure** your preferred volume levels for each game state.
-4. **Play!** The app runs quietly in the background.
-
-## Download
-> **Status:** In Review / Coming Soon
-> **Status:** Available now — free on the Overwolf App Store.
-
-ZoneSync will be available for download on the **Overwolf App Store**.
-[Download ZoneSync on Overwolf](https://www.overwolf.com/app/progzerek-zonesync)
-
-## Feedback & Support
-Found a bug or have a feature request?
-Contact: zonesync.help@gmail.com
-
-[Join the Discord community](https://discord.gg/YxYEffWc4Q) or email zonesync.help@gmail.com
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZoneSync - Dynamic music volume control for competitive games</title>
-  <meta name="description" content="ZoneSync automatically adjusts your music and app volume during competitive gameplay so you never miss footsteps, clutches or callouts.">
-  <meta property="og:title" content="ZoneSync — Dynamic music volume control for competitive games">
-  <meta property="og:description" content="Automatically ducks Spotify, Discord and other apps during crucial competitive moments — and restores them right after.">
   <title>ZoneSync — Dynamic music volume control for Counter-Strike 2</title>
   <meta name="description" content="ZoneSync automatically adjusts your music and app volume during Counter-Strike 2 so you never miss footsteps, clutches or callouts. Free on the Overwolf Store.">
   <meta property="og:title" content="ZoneSync — Dynamic music volume control for Counter-Strike 2">
@@ -68,244 +10,12 @@ Contact: zonesync.help@gmail.com
   <meta property="og:url" content="https://progzerek.github.io/zonesync-info/">
   <meta property="og:image" content="https://progzerek.github.io/zonesync-info/screenshot.jpg">
   <link rel="icon" type="image/png" href="assets/zonesync_icon.png">
-        <a href="#features">Features</a>
-        <a href="#games">Supported games</a>
-        <a href="#videos">Videos</a>
-        <a href="#how-to-use">How to use</a>
-        <a href="#download">Download</a>
-      </div>
-
-  <header class="hero container" id="top">
-    <span class="badge"><span class="badge-dot"></span>Coming soon to the Overwolf Store</span>
-    <span class="badge"><span class="badge-dot"></span>Available on the Overwolf Store</span>
-    <h1>Never miss a footstep<br>because of your music.</h1>
-    <p class="sub">
-      ZoneSync automatically ducks Spotify, Discord and other apps during crucial
-    </p>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="#download">Coming soon on Overwolf</a>
-      <a class="btn btn-ghost" href="#videos">See it in action</a>
-      <a class="btn btn-primary" href="https://www.overwolf.com/app/progzerek-zonesync" target="_blank" rel="noopener">Get it on Overwolf</a>
-      <a class="btn btn-ghost" href="#how-to-use">How it works</a>
-    </div>
-    <div class="hero-shot">
-      <img src="screenshot.jpg" alt="ZoneSync app interface" width="1200" height="675">
-      <div class="section-head">
-        <h2 class="section-title">Supported games</h2>
-        <p class="section-sub">ZoneSync works with competitive games. More titles are on the way.</p>
-        <p class="section-sub">Counter-Strike 2 is supported today. More titles are on the way.</p>
-      </div>
-      <div class="games-grid">
-        <article class="card game-card">
-    </div>
-  </section>
-<!--
-  <section class="section container" id="videos">
-    <div class="container">
-      <div class="section-head">
-        <h2 class="section-title">See it in action</h2>
-        <p class="section-sub">Short clips of ZoneSync reacting live to real competitive events.</p>
-      </div>
-      <div class="grid videos-grid">
-        <div class="video-item">
-          <video class="video-card" controls preload="none" poster="assets/videos/posters/walking.jpg" src="assets/videos/walking.mp4"></video>
-          <p class="video-label">Walking detection</p>
-        </div>
-        <div class="video-item">
-          <video class="video-card" controls preload="none" poster="assets/videos/posters/buy-phase.jpg" src="assets/videos/buy-phase.mp4"></video>
-          <p class="video-label">Round &amp; buy phase volumes</p>
-        </div>
-        <div class="video-item">
-          <video class="video-card" controls preload="none" poster="assets/videos/posters/app-mixer.jpg" src="assets/videos/app-mixer.mp4"></video>
-          <p class="video-label">App Mixer</p>
-        </div>
-      </div>
-    </div>
-  </section>
--->
-  <section class="section container" id="how-to-use">
-    <div class="section-head">
-      <h2 class="section-title">How to use</h2>
-        <span class="step-num">01</span>
-        <h3>Install</h3>
-        <p>Get ZoneSync from the Overwolf Store.</p>
-        <p>Download ZoneSync from the <a href="https://www.overwolf.com/app/progzerek-zonesync" target="_blank" rel="noopener">Overwolf Store</a>.</p>
-      </li>
-      <li class="step">
-        <span class="step-num">02</span>
-  <section class="section container" id="download">
-    <div class="download-card">
-      <span class="badge"><span class="badge-dot"></span>In Review / Coming Soon</span>
-      <span class="badge"><span class="badge-dot"></span>Available now on Overwolf</span>
-      <h2 class="download-title">Get ZoneSync</h2>
-      <p class="sub">
-        ZoneSync will be available for download on the Overwolf App Store.
-        Questions or feedback? We'd love to hear from you.
-        ZoneSync is free on the Overwolf App Store and currently supports Counter-Strike 2.
-        Questions or feedback? Join the Discord community or email us.
-      </p>
-      <a class="btn btn-primary" href="https://discord.gg/YxYEffWc4Q">Discord Comunity</a>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="https://www.overwolf.com/app/progzerek-zonesync" target="_blank" rel="noopener">Download on Overwolf</a>
-        <a class="btn btn-ghost" href="https://discord.gg/YxYEffWc4Q">Discord community</a>
-      </div>
-    </div>
-  </section>
-
-      </div>
-      <div class="footer-links">
-        <a href="https://www.overwolf.com/app/progzerek-zonesync" target="_blank" rel="noopener">Overwolf Store</a>
-        <a href="mailto:zonesync.help@gmail.com">Email</a>
-        <a href="https://discord.gg/YxYEffWc4Q">Discord</a>
-        <a href="https://github.com/progzerek/zonesync-info">GitHub</a>
-User-agent: *
-Disallow: /valorant-review.html
-Disallow: /assets/videos/
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
-  <meta name="googlebot" content="noindex, nofollow">
-  <title>ZoneSync — VALORANT integration review materials</title>
-  <meta name="description" content="Review materials for Riot Games. VALORANT support for ZoneSync is not available; this page documents the intended user flow and event mapping.">
-  <link rel="icon" type="image/png" href="assets/zonesync_icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
-  <style>
-    .notice {
-      background: rgba(245, 166, 35, 0.08);
-      border-bottom: 1px solid rgba(245, 166, 35, 0.3);
-      color: #f5a623;
-    }
-
-    .notice-inner {
-      padding: 12px 24px;
-      font-size: 13px;
-      text-align: center;
-    }
-
-    .review-meta {
-      display: flex;
-      justify-content: center;
-      gap: 8px 24px;
-      flex-wrap: wrap;
-      margin-top: 24px;
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    .video-note {
-      color: var(--muted-2);
-      font-size: 14px;
-    }
-
-    .table-wrap {
-      overflow-x: auto;
-    }
-
-    .event-table {
-      width: 100%;
-      min-width: 760px;
-      border-collapse: collapse;
-      font-size: 14px;
-    }
-
-    .event-table th,
-    .event-table td {
-      padding: 14px 16px;
-      border: 1px solid var(--border);
-      text-align: left;
-      vertical-align: top;
-    }
-
-    .event-table th {
-      background: var(--surface);
-      color: #ffffff;
-      font-family: "Roboto Mono", monospace;
-      font-size: 13px;
-      font-weight: 500;
-    }
-
-    .event-table td {
-      background: var(--surface-2);
-      color: var(--muted-2);
-    }
-
-    .event-table td.event {
-      color: #ffffff;
-      font-family: "Roboto Mono", monospace;
-      font-size: 13px;
-      white-space: nowrap;
-    }
-
-    .col-2 {
-      column-count: 2;
-      column-gap: 40px;
-    }
-
-    .col-2 h3 {
-      margin: 0 0 14px;
-      font-size: 15px;
-      break-after: avoid;
-    }
-
-    .do-list,
-    .dont-list {
-      list-style: none;
-    }
-
-    .do-list li,
-    .dont-list li {
-      position: relative;
-      margin-bottom: 10px;
-      padding-left: 28px;
-      color: var(--muted-2);
-      font-size: 14px;
-    }
-
-    .do-list li::before,
-    .dont-list li::before {
-      position: absolute;
-      left: 0;
-      font-weight: 700;
-    }
-
-    .do-list li::before {
-      content: "\2713";
-      color: var(--accent);
-    }
-
-    .dont-list li::before {
-      content: "\2715";
-      color: #3fd67f;
-    }
-
-    .legal {
-      margin-top: 28px;
-      color: var(--muted);
-      font-size: 13px;
-      text-align: center;
-    }
-
-    @media (max-width: 760px) {
-      .col-2 {
-        column-count: 1;
-      }
-    }
-  </style>
 </head>
 <body>
-
-  <div class="notice">
-    <div class="container notice-inner">
-      Review material. ZoneSync does not support VALORANT and is not endorsed by, sponsored by or affiliated with Riot Games.
-    </div>
-  </div>
 
   <nav class="nav">
     <div class="container nav-inner">
@@ -314,243 +24,148 @@ Disallow: /assets/videos/
         <span>ZoneSync</span>
       </a>
       <div class="nav-links">
-        <a href="#overview">Overview</a>
-        <a href="#clips">Clips</a>
-        <a href="#mapping">Event mapping</a>
-        <a href="#privacy">Data &amp; permissions</a>
+        <a href="#features">Features</a>
+        <a href="#games">Supported games</a>
+        <a href="#how-to-use">How to use</a>
+        <a href="#download">Download</a>
       </div>
     </div>
   </nav>
 
   <header class="hero container" id="top">
-    <span class="badge"><span class="badge-dot"></span>Review draft</span>
-    <h1>VALORANT support<br>integration review</h1>
+    <span class="badge"><span class="badge-dot"></span>Available on the Overwolf Store</span>
+    <h1>Never miss a footstep<br>because of your music.</h1>
     <p class="sub">
-      This page is submitted to Riot Games for review. It documents the user flow ZoneSync
-      would provide in VALORANT so the integration can be evaluated without a pre-release
-      build. VALORANT is not a supported game today.
+      ZoneSync automatically ducks Spotify, Discord and other apps during crucial
+      competitive moments — walks, clutches, buy rounds — and restores them right after.
     </p>
     <div class="cta-row">
-      <a class="btn btn-primary" href="https://www.overwolf.com/app/progzerek-zonesync" target="_blank" rel="noopener">Current live build (CS2)</a>
-      <a class="btn btn-ghost" href="mailto:zonesync.help@gmail.com">Contact the developer</a>
+      <a class="btn btn-primary" href="https://www.overwolf.com/app/progzerek-zonesync" target="_blank" rel="noopener">Get it on Overwolf</a>
+      <a class="btn btn-ghost" href="#how-to-use">How it works</a>
     </div>
-    <div class="review-meta">
-      <span>Developer: Progzerek</span>
-      <span>Platform: Overwolf desktop app</span>
-      <span>Status: awaiting Riot approval</span>
+    <div class="hero-shot">
+      <img src="screenshot.jpg" alt="ZoneSync app interface" width="1200" height="675">
     </div>
   </header>
 
-  <section class="section section-alt" id="overview">
-    <div class="container">
-      <div class="section-head">
-        <h2 class="section-title">Overview</h2>
-        <p class="section-sub">What is live today, and what is being proposed.</p>
-      </div>
-      <div class="grid features-grid">
-        <article class="card">
-          <h3>Live today</h3>
-          <p>
-            ZoneSync is published on the Overwolf Store and currently supports
-            Counter-Strike 2 only. The live app is unmodified VALORANT-wise: it does not
-            detect VALORANT, install in it, or change any audio while VALORANT is running.
-          </p>
-        </article>
-        <article class="card">
-          <h3>Proposed for VALORANT</h3>
-          <p>
-            The same five volume behaviours that ship for CS2, driven by VALORANT's
-            round and player-state events. The user experience is identical; only the
-            event source differs.
-          </p>
-        </article>
-        <article class="card">
-          <h3>What we are asking for</h3>
-          <p>
-            Permission to publish a VALORANT build on the Overwolf Store, and confirmation
-            that the behaviours below are acceptable for competitive play.
-          </p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section container" id="clips">
+  <section class="section container" id="features">
     <div class="section-head">
-      <h2 class="section-title">Clips</h2>
-      <p class="section-sub">
-        Recordings of the app reacting to live gameplay. Each clip was captured with
-        VALORANT running and the ZoneSync overlay active.
-      </p>
+      <h2 class="section-title">Features</h2>
+      <p class="section-sub">Every mode uses the same core logic, tuned to a different game event.</p>
     </div>
-    <div class="grid videos-grid">
-      <div class="video-item">
-        <video class="video-card" controls preload="none" playsinline poster="assets/videos/posters/walking.jpg" src="assets/videos/walking.mp4"></video>
-        <p class="video-label">Walking detection</p>
-        <p class="video-note">
-          Music drops to the reduced level while the walk key is held and returns on release.
-          No overlay is drawn over the game.
-        </p>
-      </div>
-      <div class="video-item">
-        <video class="video-card" controls preload="none" playsinline poster="assets/videos/posters/buy-phase.jpg" src="assets/videos/buy-phase.mp4"></video>
-        <p class="video-label">Round &amp; buy phase volumes</p>
-        <p class="video-note">
-          Separate user-defined levels for the buy phase and for active combat, switched
-          on round transition.
-        </p>
-      </div>
-      <div class="video-item">
-        <video class="video-card" controls preload="none" playsinline poster="assets/videos/posters/app-mixer.jpg" src="assets/videos/app-mixer.mp4"></video>
-        <p class="video-label">App Mixer</p>
-        <p class="video-note">
-          The user picks which applications ZoneSync is allowed to control. Game audio is
-          never in that list.
-        </p>
-      </div>
+    <div class="grid features-grid">
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+        </div>
+        <h3>Dynamic Volume Control</h3>
+        <p>Music automatically ducks during important gameplay moments, then smoothly returns when the danger is over.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="1"/><path d="m9 20 3-6 3 6"/><path d="m6 8 6 2 6-2"/><path d="M12 10v4"/></svg>
+        </div>
+        <h3>Walking</h3>
+        <p>Volume lowers whenever you hold your Walk key (e.g. Shift), so you can actually hear what's around you.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/></svg>
+        </div>
+        <h3>Clutch Mode</h3>
+        <p>Volume drops automatically when you're the last player alive — full focus for your 1vX situations.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="8 2 16 2 22 8 22 16 16 22 8 22 2 16 2 8"/><line x1="9" y1="9" x2="15" y2="15"/><line x1="15" y1="9" x2="9" y2="15"/></svg>
+        </div>
+        <h3>Death Mode</h3>
+        <p>Full volume comes back the moment you die. Spectate your teammates without touching the pause button.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 1"/><line x1="10" y1="2" x2="14" y2="2"/></svg>
+        </div>
+        <h3>Round &amp; Buy Phase</h3>
+        <p>Separate volume levels for active combat versus shopping time, detected automatically each round.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="21" y1="4" x2="14" y2="4"/><line x1="10" y1="4" x2="3" y2="4"/><line x1="21" y1="12" x2="12" y2="12"/><line x1="8" y1="12" x2="3" y2="12"/><line x1="21" y1="20" x2="16" y2="20"/><line x1="12" y1="20" x2="3" y2="20"/><line x1="14" y1="2" x2="14" y2="6"/><line x1="8" y1="10" x2="8" y2="14"/><line x1="16" y1="18" x2="16" y2="22"/></svg>
+        </div>
+        <h3>App Mixer</h3>
+        <p>Choose exactly which apps get controlled — mute Spotify while Discord stays at normal volume.</p>
+      </article>
+
     </div>
   </section>
 
-  <section class="section section-alt" id="mapping">
+  <section class="section section-alt" id="games">
     <div class="container">
       <div class="section-head">
-        <h2 class="section-title">Event mapping</h2>
-        <p class="section-sub">
-          Every input the app would read from VALORANT, and the only action it would take.
-          All five behaviours are already live in the CS2 build.
-        </p>
+        <h2 class="section-title">Supported games</h2>
+        <p class="section-sub">Counter-Strike 2 is supported today. More titles are on the way.</p>
       </div>
-      <div class="table-wrap">
-        <table class="event-table">
-          <thead>
-            <tr>
-              <th>Game event</th>
-              <th>ZoneSync action</th>
-              <th>Effect on the player</th>
-              <th>Effect on the game</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="event">Walk key held</td>
-              <td>Lower the volume of user-selected apps to the configured reduced level.</td>
-              <td>Music fades down while moving quietly, restores on release.</td>
-              <td>None. Audio only, no input is sent to the game.</td>
-            </tr>
-            <tr>
-              <td class="event">Buy phase start</td>
-              <td>Switch user-selected apps to the configured buy-phase level.</td>
-              <td>Quieter music while shopping, so team comms stay clear.</td>
-              <td>None.</td>
-            </tr>
-            <tr>
-              <td class="event">Round live</td>
-              <td>Switch user-selected apps to the configured combat level.</td>
-              <td>Music stays low for the whole round.</td>
-              <td>None.</td>
-            </tr>
-            <tr>
-              <td class="event">Player death</td>
-              <td>Restore the user's normal volume level.</td>
-              <td>Music comes back up while dead or spectating.</td>
-              <td>None. No respawn or input timing is affected.</td>
-            </tr>
-            <tr>
-              <td class="event">Last player alive</td>
-              <td>Apply the configured clutch level for the duration of the round.</td>
-              <td>Quietest setting for 1vX situations.</td>
-              <td>None. Derived from a round-state event, not from screen analysis.</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="games-grid">
+        <article class="card game-card">
+            <div class="card-icon game-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="11" x2="10" y2="11"/><line x1="8" y1="9" x2="8" y2="13"/><line x1="15" y1="12" x2="15.01" y2="12"/><line x1="18" y1="10" x2="18.01" y2="10"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"/></svg>
+            </div>
+            <span class="game-tag">Supported</span>
+            <h3>Counter-Strike 2</h3>
+            <p>CS2 — full walking, clutch, death and buy-round detection.</p>
+          </article>
+        <p class="games-more">More titles coming soon.</p>
       </div>
     </div>
   </section>
-
-  <section class="section container" id="integrity">
+  <section class="section container" id="how-to-use">
     <div class="section-head">
-      <h2 class="section-title">Competitive integrity</h2>
-      <p class="section-sub">An explicit list of what the app does and does not do.</p>
+      <h2 class="section-title">How to use</h2>
+      <p class="section-sub">ZoneSync uses the Overwolf Game Events Provider to detect game states locally on your machine.</p>
     </div>
-    <div class="col-2">
-      <div>
-        <h3>What ZoneSync does</h3>
-        <ul class="do-list">
-          <li>Read game state events locally through the Overwolf Game Events Provider.</li>
-          <li>Change the Windows per-application audio volume of apps the user explicitly selected.</li>
-          <li>Show its own settings window and status indicator outside the game viewport.</li>
-          <li>Store its settings locally on the user's machine.</li>
-        </ul>
-      </div>
-      <div>
-        <h3>What ZoneSync never does</h3>
-        <ul class="dont-list">
-          <li>No reading or parsing of the game's process memory.</li>
-          <li>No aim assistance, recoil control, trigger automation or any input injection.</li>
-          <li>No capture, screenshotting, streaming or replay of game content.</li>
-          <li>No overlay drawn on top of the game viewport.</li>
-          <li>No modification of game files, memory or network traffic.</li>
-          <li>No collection or transmission of gameplay data, user data or analytics.</li>
-          <li>No access to the game's own audio output.</li>
-        </ul>
-      </div>
-    </div>
+    <ol class="steps">
+      <li class="step">
+        <span class="step-num">01</span>
+        <h3>Install</h3>
+        <p>Download ZoneSync from the <a href="https://www.overwolf.com/app/progzerek-zonesync" target="_blank" rel="noopener">Overwolf Store</a>.</p>
+      </li>
+      <li class="step">
+        <span class="step-num">02</span>
+        <h3>Launch a supported game</h3>
+        <p>The app detects the game automatically.</p>
+      </li>
+      <li class="step">
+        <span class="step-num">03</span>
+        <h3>Configure</h3>
+        <p>Set your preferred volume levels for each game state.</p>
+      </li>
+      <li class="step">
+        <span class="step-num">04</span>
+        <h3>Play!</h3>
+        <p>ZoneSync runs quietly in the background.</p>
+      </li>
+    </ol>
   </section>
 
-  <section class="section section-alt" id="privacy">
-    <div class="container">
-      <div class="section-head">
-        <h2 class="section-title">Data &amp; permissions</h2>
-        <p class="section-sub">
-          ZoneSync runs entirely on the user's machine. There is no account, no server and
-          no network traffic.
-        </p>
-      </div>
-      <div class="grid features-grid">
-        <article class="card">
-          <h3>What is read</h3>
-          <p>
-            Round phase transitions, the player's alive/dead state, whether the player is
-            the last one alive, and whether the walk key is currently held. Nothing else is
-            read from the game.
-          </p>
-        </article>
-        <article class="card">
-          <h3>What is controlled</h3>
-          <p>
-            Only the per-app audio sessions the user ticks in the App Mixer. Game audio is
-            never controlled and the game's own volume settings are never modified.
-          </p>
-        </article>
-        <article class="card">
-          <h3>What leaves the device</h3>
-          <p>
-            Nothing. No analytics, no crash reporting, no telemetry, no account. The app
-            makes no outbound network requests, so there is no player data to leak.
-          </p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section container" id="contact">
+  <section class="section container" id="download">
     <div class="download-card">
-      <h2 class="download-title">Review questions</h2>
+      <span class="badge"><span class="badge-dot"></span>Available now on Overwolf</span>
+      <h2 class="download-title">Get ZoneSync</h2>
       <p class="sub">
-        If any of the behaviours described here is not acceptable for competitive play, or
-        if additional detail is needed on how an event is detected, please get in touch and
-        we will provide the specifics.
+        ZoneSync is free on the Overwolf App Store and currently supports Counter-Strike 2.
+        Questions or feedback? Join the Discord community or email us.
       </p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="mailto:zonesync.help@gmail.com">zonesync.help@gmail.com</a>
-        <a class="btn btn-ghost" href="https://www.overwolf.com/app/progzerek-zonesync" target="_blank" rel="noopener">Live CS2 build</a>
+        <a class="btn btn-primary" href="https://www.overwolf.com/app/progzerek-zonesync" target="_blank" rel="noopener">Download on Overwolf</a>
+        <a class="btn btn-ghost" href="https://discord.gg/YxYEffWc4Q">Discord community</a>
       </div>
-      <p class="legal">
-        ZoneSync is an independent application and is not endorsed by, sponsored by or
-        affiliated with Riot Games. VALORANT is a trademark of Riot Games, Inc. This page is
-        confidential review material provided for the purpose of an approval request, and is
-        not a statement that VALORANT support is available.
-      </p>
     </div>
   </section>
 
@@ -561,8 +176,10 @@ Disallow: /assets/videos/
         <span>ZoneSync</span>
       </div>
       <div class="footer-links">
-        <a href="mailto:zonesync.help@gmail.com">Contact</a>
-        <a href="index.html">Main site</a>
+        <a href="https://www.overwolf.com/app/progzerek-zonesync" target="_blank" rel="noopener">Overwolf Store</a>
+        <a href="mailto:zonesync.help@gmail.com">Email</a>
+        <a href="https://discord.gg/YxYEffWc4Q">Discord</a>
+        <a href="https://github.com/progzerek/zonesync-info">GitHub</a>
       </div>
     </div>
   </footer>
