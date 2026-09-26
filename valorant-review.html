@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
   <meta name="googlebot" content="noindex, nofollow">
-  <title>ZoneSync — VALORANT integration review materials</title>
-  <meta name="description" content="Review materials for Riot Games. VALORANT support for ZoneSync is not available; this page documents the intended user flow and event mapping.">
+  <title>ZoneSync — VALORANT integration review</title>
   <link rel="icon" type="image/png" href="assets/zonesync_icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,108 +16,14 @@
       background: rgba(245, 166, 35, 0.08);
       border-bottom: 1px solid rgba(245, 166, 35, 0.3);
       color: #f5a623;
-    }
-
-    .notice-inner {
+      font-size: 13px;
       padding: 12px 24px;
-      font-size: 13px;
       text-align: center;
-    }
-
-    .review-meta {
-      display: flex;
-      justify-content: center;
-      gap: 8px 24px;
-      flex-wrap: wrap;
-      margin-top: 24px;
-      color: var(--muted);
-      font-size: 13px;
     }
 
     .video-note {
       color: var(--muted-2);
       font-size: 14px;
-    }
-
-    .table-wrap {
-      overflow-x: auto;
-    }
-
-    .event-table {
-      width: 100%;
-      min-width: 760px;
-      border-collapse: collapse;
-      font-size: 14px;
-    }
-
-    .event-table th,
-    .event-table td {
-      padding: 14px 16px;
-      border: 1px solid var(--border);
-      text-align: left;
-      vertical-align: top;
-    }
-
-    .event-table th {
-      background: var(--surface);
-      color: #ffffff;
-      font-family: "Roboto Mono", monospace;
-      font-size: 13px;
-      font-weight: 500;
-    }
-
-    .event-table td {
-      background: var(--surface-2);
-      color: var(--muted-2);
-    }
-
-    .event-table td.event {
-      color: #ffffff;
-      font-family: "Roboto Mono", monospace;
-      font-size: 13px;
-      white-space: nowrap;
-    }
-
-    .col-2 {
-      column-count: 2;
-      column-gap: 40px;
-    }
-
-    .col-2 h3 {
-      margin: 0 0 14px;
-      font-size: 15px;
-      break-after: avoid;
-    }
-
-    .do-list,
-    .dont-list {
-      list-style: none;
-    }
-
-    .do-list li,
-    .dont-list li {
-      position: relative;
-      margin-bottom: 10px;
-      padding-left: 28px;
-      color: var(--muted-2);
-      font-size: 14px;
-    }
-
-    .do-list li::before,
-    .dont-list li::before {
-      position: absolute;
-      left: 0;
-      font-weight: 700;
-    }
-
-    .do-list li::before {
-      content: "\2713";
-      color: var(--accent);
-    }
-
-    .dont-list li::before {
-      content: "\2715";
-      color: #3fd67f;
     }
 
     .legal {
@@ -127,20 +32,12 @@
       font-size: 13px;
       text-align: center;
     }
-
-    @media (max-width: 760px) {
-      .col-2 {
-        column-count: 1;
-      }
-    }
   </style>
 </head>
 <body>
 
   <div class="notice">
-    <div class="container notice-inner">
-      Review material. ZoneSync does not support VALORANT and is not endorsed by, sponsored by or affiliated with Riot Games.
-    </div>
+    Review material. ZoneSync does not support VALORANT and is not endorsed by, sponsored by or affiliated with Riot Games.
   </div>
 
   <nav class="nav">
@@ -149,243 +46,54 @@
         <img src="assets/zonesync_icon.png" alt="ZoneSync logo">
         <span>ZoneSync</span>
       </a>
-      <div class="nav-links">
-        <a href="#overview">Overview</a>
-        <a href="#clips">Clips</a>
-        <a href="#mapping">Event mapping</a>
-        <a href="#privacy">Data &amp; permissions</a>
-      </div>
     </div>
   </nav>
 
   <header class="hero container" id="top">
-    <span class="badge"><span class="badge-dot"></span>Review draft</span>
-    <h1>VALORANT support<br>integration review</h1>
+    <h1>VALORANT integration review</h1>
     <p class="sub">
-      This page is submitted to Riot Games for review. It documents the user flow ZoneSync
-      would provide in VALORANT so the integration can be evaluated without a pre-release
-      build. VALORANT is not a supported game today.
+      ZoneSync is live on the Overwolf Store for Counter-Strike 2. VALORANT support is not
+      available and requires Riot's approval. The clips below show the user flow as it
+      behaves in game.
     </p>
     <div class="cta-row">
-      <a class="btn btn-primary" href="https://www.overwolf.com/app/progzerek-zonesync" target="_blank" rel="noopener">Current live build (CS2)</a>
-      <a class="btn btn-ghost" href="mailto:zonesync.help@gmail.com">Contact the developer</a>
-    </div>
-    <div class="review-meta">
-      <span>Developer: Progzerek</span>
-      <span>Platform: Overwolf desktop app</span>
-      <span>Status: awaiting Riot approval</span>
+      <a class="btn btn-primary" href="https://www.overwolf.com/app/progzerek-zonesync" target="_blank" rel="noopener">Current live build</a>
+      <a class="btn btn-ghost" href="mailto:zonesync.help@gmail.com">Contact</a>
     </div>
   </header>
 
-  <section class="section section-alt" id="overview">
-    <div class="container">
-      <div class="section-head">
-        <h2 class="section-title">Overview</h2>
-        <p class="section-sub">What is live today, and what is being proposed.</p>
-      </div>
-      <div class="grid features-grid">
-        <article class="card">
-          <h3>Live today</h3>
-          <p>
-            ZoneSync is published on the Overwolf Store and currently supports
-            Counter-Strike 2 only. The live app is unmodified VALORANT-wise: it does not
-            detect VALORANT, install in it, or change any audio while VALORANT is running.
-          </p>
-        </article>
-        <article class="card">
-          <h3>Proposed for VALORANT</h3>
-          <p>
-            The same five volume behaviours that ship for CS2, driven by VALORANT's
-            round and player-state events. The user experience is identical; only the
-            event source differs.
-          </p>
-        </article>
-        <article class="card">
-          <h3>What we are asking for</h3>
-          <p>
-            Permission to publish a VALORANT build on the Overwolf Store, and confirmation
-            that the behaviours below are acceptable for competitive play.
-          </p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section container" id="clips">
-    <div class="section-head">
-      <h2 class="section-title">Clips</h2>
-      <p class="section-sub">
-        Recordings of the app reacting to live gameplay. Each clip was captured with
-        VALORANT running and the ZoneSync overlay active.
-      </p>
-    </div>
+  <section class="section container">
     <div class="grid videos-grid">
       <div class="video-item">
         <video class="video-card" controls preload="none" playsinline poster="assets/videos/posters/walking.jpg" src="assets/videos/walking.mp4"></video>
         <p class="video-label">Walking detection</p>
-        <p class="video-note">
-          Music drops to the reduced level while the walk key is held and returns on release.
-          No overlay is drawn over the game.
-        </p>
+        <p class="video-note">Volume drops while the walk key is held, returns on release.</p>
       </div>
       <div class="video-item">
         <video class="video-card" controls preload="none" playsinline poster="assets/videos/posters/buy-phase.jpg" src="assets/videos/buy-phase.mp4"></video>
-        <p class="video-label">Round &amp; buy phase volumes</p>
-        <p class="video-note">
-          Separate user-defined levels for the buy phase and for active combat, switched
-          on round transition.
-        </p>
+        <p class="video-label">Round &amp; buy phase</p>
+        <p class="video-note">Separate volume level for the buy phase and for the live round.</p>
       </div>
       <div class="video-item">
         <video class="video-card" controls preload="none" playsinline poster="assets/videos/posters/app-mixer.jpg" src="assets/videos/app-mixer.mp4"></video>
         <p class="video-label">App Mixer</p>
-        <p class="video-note">
-          The user picks which applications ZoneSync is allowed to control. Game audio is
-          never in that list.
-        </p>
+        <p class="video-note">The user chooses which apps ZoneSync is allowed to control.</p>
       </div>
     </div>
   </section>
 
-  <section class="section section-alt" id="mapping">
-    <div class="container">
-      <div class="section-head">
-        <h2 class="section-title">Event mapping</h2>
-        <p class="section-sub">
-          Every input the app would read from VALORANT, and the only action it would take.
-          All five behaviours are already live in the CS2 build.
-        </p>
-      </div>
-      <div class="table-wrap">
-        <table class="event-table">
-          <thead>
-            <tr>
-              <th>Game event</th>
-              <th>ZoneSync action</th>
-              <th>Effect on the player</th>
-              <th>Effect on the game</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="event">Walk key held</td>
-              <td>Lower the volume of user-selected apps to the configured reduced level.</td>
-              <td>Music fades down while moving quietly, restores on release.</td>
-              <td>None. Audio only, no input is sent to the game.</td>
-            </tr>
-            <tr>
-              <td class="event">Buy phase start</td>
-              <td>Switch user-selected apps to the configured buy-phase level.</td>
-              <td>Quieter music while shopping, so team comms stay clear.</td>
-              <td>None.</td>
-            </tr>
-            <tr>
-              <td class="event">Round live</td>
-              <td>Switch user-selected apps to the configured combat level.</td>
-              <td>Music stays low for the whole round.</td>
-              <td>None.</td>
-            </tr>
-            <tr>
-              <td class="event">Player death</td>
-              <td>Restore the user's normal volume level.</td>
-              <td>Music comes back up while dead or spectating.</td>
-              <td>None. No respawn or input timing is affected.</td>
-            </tr>
-            <tr>
-              <td class="event">Last player alive</td>
-              <td>Apply the configured clutch level for the duration of the round.</td>
-              <td>Quietest setting for 1vX situations.</td>
-              <td>None. Derived from a round-state event, not from screen analysis.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <section class="section container" id="integrity">
-    <div class="section-head">
-      <h2 class="section-title">Competitive integrity</h2>
-      <p class="section-sub">An explicit list of what the app does and does not do.</p>
-    </div>
-    <div class="col-2">
-      <div>
-        <h3>What ZoneSync does</h3>
-        <ul class="do-list">
-          <li>Read game state events locally through the Overwolf Game Events Provider.</li>
-          <li>Change the Windows per-application audio volume of apps the user explicitly selected.</li>
-          <li>Show its own settings window and status indicator outside the game viewport.</li>
-          <li>Store its settings locally on the user's machine.</li>
-        </ul>
-      </div>
-      <div>
-        <h3>What ZoneSync never does</h3>
-        <ul class="dont-list">
-          <li>No reading or parsing of the game's process memory.</li>
-          <li>No aim assistance, recoil control, trigger automation or any input injection.</li>
-          <li>No capture, screenshotting, streaming or replay of game content.</li>
-          <li>No overlay drawn on top of the game viewport.</li>
-          <li>No modification of game files, memory or network traffic.</li>
-          <li>No collection or transmission of gameplay data, user data or analytics.</li>
-          <li>No access to the game's own audio output.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-alt" id="privacy">
-    <div class="container">
-      <div class="section-head">
-        <h2 class="section-title">Data &amp; permissions</h2>
-        <p class="section-sub">
-          ZoneSync runs entirely on the user's machine. There is no account, no server and
-          no network traffic.
-        </p>
-      </div>
-      <div class="grid features-grid">
-        <article class="card">
-          <h3>What is read</h3>
-          <p>
-            Round phase transitions, the player's alive/dead state, whether the player is
-            the last one alive, and whether the walk key is currently held. Nothing else is
-            read from the game.
-          </p>
-        </article>
-        <article class="card">
-          <h3>What is controlled</h3>
-          <p>
-            Only the per-app audio sessions the user ticks in the App Mixer. Game audio is
-            never controlled and the game's own volume settings are never modified.
-          </p>
-        </article>
-        <article class="card">
-          <h3>What leaves the device</h3>
-          <p>
-            Nothing. No analytics, no crash reporting, no telemetry, no account. The app
-            makes no outbound network requests, so there is no player data to leak.
-          </p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section container" id="contact">
+  <section class="section container">
     <div class="download-card">
-      <h2 class="download-title">Review questions</h2>
       <p class="sub">
-        If any of the behaviours described here is not acceptable for competitive play, or
-        if additional detail is needed on how an event is detected, please get in touch and
-        we will provide the specifics.
+        ZoneSync only changes the volume of the apps the user selects. It does not read
+        game memory, draw anything over the game, or send any data over the network.
       </p>
       <div class="cta-row">
         <a class="btn btn-primary" href="mailto:zonesync.help@gmail.com">zonesync.help@gmail.com</a>
-        <a class="btn btn-ghost" href="https://www.overwolf.com/app/progzerek-zonesync" target="_blank" rel="noopener">Live CS2 build</a>
       </div>
       <p class="legal">
         ZoneSync is an independent application and is not endorsed by, sponsored by or
-        affiliated with Riot Games. VALORANT is a trademark of Riot Games, Inc. This page is
-        confidential review material provided for the purpose of an approval request, and is
-        not a statement that VALORANT support is available.
+        affiliated with Riot Games. VALORANT is a trademark of Riot Games, Inc.
       </p>
     </div>
   </section>
