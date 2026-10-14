@@ -44,7 +44,7 @@ ZoneSync uses the **Overwolf Game Events Provider (GEP)** to detect game states 
 > **Status:** In Review / Coming Soon
 > **Status:** Available now — free on the Overwolf App Store.
 
-ZoneSync will be available for download on the **Overwolf App Store**.
+ZoneSync is available for download on the **Overwolf App Store**.
 [Download ZoneSync on Overwolf](https://www.overwolf.com/app/progzerek-zonesync)
 
 ## Feedback & Support
