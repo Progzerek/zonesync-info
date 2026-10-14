@@ -1,9 +1,7 @@
 # ZoneSync
 
 **A dynamic music volume controller for competetive 5v5 games.**
-**A dynamic music volume controller for competitive 5v5 games.**
 
-![ZoneSync App Interface](image.png)
 ![ZoneSync App Interface](screenshot.jpg)
 
 ## Overview
